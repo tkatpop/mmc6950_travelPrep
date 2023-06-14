@@ -14,7 +14,7 @@
     </head>
 
     <header>
-        <nav><!--Add the nav bar after they login--></nav>
+        <nav></nav>
     </header>
 
     <body>
