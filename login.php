@@ -11,12 +11,30 @@
     </header>
 
     <body>
-        <section>
+        <section class="index-login">
             <h2>LOGIN</h2>
             <!--Form section-->
-            <div class="loginForm"><!--FILL OUT THE FORM--></div>
+                <!--Form for Login after they have already created an account-->
+                <form action="includes/login.inc.php" method="post">
+                    <input type="text" name="uid" placeholder="Username">
+                    <input type="password" name="pwd" placeholder="Password">
+                    <button type="submit" name="submit">Login</button>
+                </form>
 
             <div><p>Not a member? <a href="signup.php">Sign Up Here</a></p></div>
+
+            <?php
+                if (isset($_GET["error"])){
+                    if($_GET["error"] == "emptyinputlogin"){
+                        echo "<p>Fill in all login fields!</p>";
+                    } else if($_GET["error"] == "wronglogin"){
+                        echo "<p>Incorrect login information.</p>";
+                    }else if($_GET["error"] == "nonelog"){
+                        echo "<p>You are signed in!</p>";
+                    }
+                }
+
+            ?>
         </section>
     
     </body>
