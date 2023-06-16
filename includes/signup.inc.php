@@ -45,5 +45,5 @@ if(isset($_POST["submit"])){
 
 }else {
     //Going back to front page
-    header("location: ../index.php");
+    header("location: ../index.html");
 }
