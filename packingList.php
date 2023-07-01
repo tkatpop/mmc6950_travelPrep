@@ -46,10 +46,13 @@
                 <li><a  href="packingList.php">Packing List</a></li>
                 <li><a  href="locationInfo.php">Locations</a></li>
                 <li><a  href="addLinks.php">Additional Info</a></li>
-                <li><a href="logout.php">Logout</a></li>
             </ul>
 
             &copy; <?php echo date('Y'); ?> 
+
+            <h4><a href="logout.php">Logout</a></h4>
         </footer>
+
+        <script src="js/packingList.js"></script>
     </body>
 </html>
