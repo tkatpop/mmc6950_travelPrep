@@ -8,7 +8,7 @@
 
     <header>
         <!--LOGO goes here-->
-        
+
         <!--Header nav bar after logged in-->
         <nav>
             <button class="hamburger-btn">
@@ -64,7 +64,17 @@
         </div> <!--Closing tag for #container-->
 
         <footer id="footer">
-             <!--Footer nav bar after logged in--> &copy; <?php echo date('Y'); ?> 
+             <!--Footer nav bar after logged in-->
+
+             <ul class="footer-menu">
+                <li><a  href="main.php">Home</a></li>
+                <li><a  href="packingList.php">Packing List</a></li>
+                <li><a  href="locationInfo.php">Locations</a></li>
+                <li><a  href="addLinks.php">Additional Info</a></li>
+                <li><a href="logout.php">Logout</a></li>
+            </ul>
+
+            &copy; <?php echo date('Y'); ?> 
         </footer>
 
         <script src="js/locationInfo.js"></script>
