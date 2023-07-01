@@ -7,7 +7,23 @@
     </head>
 
     <header>
-        <nav></nav>
+        <!--LOGO goes here-->
+        
+        <!--Header nav bar after logged in-->
+        <nav>
+            <button class="hamburger-btn">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+
+            <ul class="hamburger-menu" id="main-menu">
+                <li><a class="menuItem" href="main.php">Home</a></li>
+                <li><a class="menuItem" href="packingList.php">Packing List</a></li>
+                <li><a class="menuItem" href="locationInfo.php">Locations</a></li>
+                <li><a class="menuItem" href="addLinks.php">Additional Info</a></li>
+                <li><a class="menuItem" href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
     </header>
 
     <body>

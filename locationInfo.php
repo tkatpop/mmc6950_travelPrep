@@ -7,7 +7,23 @@
     </head>
 
     <header>
-        <nav></nav>
+        <!--LOGO goes here-->
+        
+        <!--Header nav bar after logged in-->
+        <nav>
+            <button class="hamburger-btn">
+                <i class="menuIcon material-icons">menu</i>
+                <i class="closeIcon material-icons">close</i>
+            </button>
+
+            <ul class="hamburger-menu" id="main-menu">
+                <li><a class="menuItem" href="main.php">Home</a></li>
+                <li><a class="menuItem" href="packingList.php">Packing List</a></li>
+                <li><a class="menuItem" href="locationInfo.php">Locations</a></li>
+                <li><a class="menuItem" href="addLinks.php">Additional Info</a></li>
+                <li><a class="menuItem" href="logout.php">Logout</a></li>
+            </ul>
+        </nav>
     </header>
 
     <body>
@@ -18,18 +34,39 @@
             <div>
                 <h1>Location Information</h1>
             </div>
+            
+            <!--Previous search sessions shows up here-->
+            <section id="left_previous_searches"></section> 
 
-            <section id="left_previous_searches"></section> <!--Previous search sessions shows up here-->
+            <section id="locationInfo">
+                <!--API location info search form-->
+                <form>
+                    <label for="locationInfo-search">Enter Location Name</label>
+                    <input name="search" id="locationInfo-search" type="text" placeholder="enter the country name here"
+                    />
+                    <button type="submit">Search</button>
+                </form>
 
-            <section id="locationInfo"></section> <!--API location info shows up here-->
+                <!--API location info shows up here-->
+                <div id="locationInfo-display"></div>
+            </section> 
 
-            <section id="right_weatherInfo"></section> <!--API weather info shows up here-->
+            <section id="right_weatherInfo"><!--API weather info shows up here-->
+                <h4>Weather</h4>
+                <div id="weatherInfo-display"></div>
+            </section> 
 
-            <section id="right_currencyInfo"></section> <!--API currency info shows up here-->
+            <section id="right_currencyInfo"><!--API currency info shows up here-->
+                <h4>Currency</h4>
+                <div id="currencyInfo-display"></div>
+            </section> 
 
         </div> <!--Closing tag for #container-->
+
         <footer id="footer">
              <!--Footer nav bar after logged in--> &copy; <?php echo date('Y'); ?> 
         </footer>
+
+        <script src="js/locationInfo.js"></script>
     </body>
 </html>
