@@ -8,6 +8,7 @@ var locationInfo = document.getElementById('locationInfo')
 var locationForm = document.querySelector('form')
 var locationSearch = document.getElementById('locationInfo-search')
 var locationInfoDisplay = document.getElementById('locationInfo-display')
+var currencyInfoDisplay = document.getElementById('currencyInfo-display')
 
 //Input Submit
 
@@ -57,18 +58,39 @@ function showLocation(location){
   countryOfficialName.textContent = ("Official Name: " + location[0].name.official)
   locationInfoDisplay.appendChild(countryOfficialName)
 
+  //Country Flag
+  var flagImg = document.createElement('img')
+  flagImg.src = (location[0].flags.png)
+  flagImg.alt = (location[0].flags.alt)
+  locationInfoDisplay.appendChild(flagImg)
+
   //Country Region
   var countryRegion = document.createElement('h4')
   countryRegion.textContent = ("Region: " + location[0].region)
   locationInfoDisplay.appendChild(countryRegion)
 
-  //NEED LANGUAGES
+  //Country Capital
+  var countryCapital = document.createElement('h4')
+  countryCapital.textContent = ("Capital: " + location[0].capital)
+  locationInfoDisplay.appendChild(countryCapital)
 
-  //NEED FLAG
+  //Country Language- - MIGHT NEED A FOR LOOP TO RETREIVE VALUES
+  var countryLang = document.createElement('h4')
+  countryLang.textContent = ("Language(s): " + location[0].languages)
+  locationInfoDisplay.appendChild(countryLang)
 
-  //NEED CAPITOL
+  //Google Map Link
+  var googleMap = document.createElement('a')
+  googleMap.target = '_blank'
+  googleMap.href = ("https://www.google.com/maps/search/?api=1&query=" + location[0].latlng[0] + "," + location[0].latlng[1]) 
+  googleMap.textContent = "Click to view map"
+  locationInfoDisplay.appendChild(googleMap)
 
-  //NEED CURRENCY
+  //Country Currency- MIGHT NEED A FOR LOOP TO RETREIVE VALUES
+  var countryCurrency = document.createElement('h4')
+  countryCurrency.textContent = ("Primary Currency: " + location[0].currencies)
+  currencyInfoDisplay.appendChild(countryCurrency)
+
 }
 
 
