@@ -1,3 +1,25 @@
+//Packing List Season Dropdown Selection
+
+var packingForm = document.getElementById('packingForm')
+var selectSeason = document.getElementById('season').value
+var packingListDisplay = document.getElementById('Packing-List-Display')
+// var selectSpring = document.getElementById('Spring')
+// var selectSummer = document.getElementById('Summer')
+// var selectFall = document.getElementById('Fall')
+// var selectWinter = document.getElementById('Winter')
+
+function seasonList(){
+  var packingListSeason = document.createElement('h4')
+  packingListSeason.textContent = ("Packing List Recommended for Season: " + selectSeason)
+  packingListDisplay.appendChild(packingListSeason)
+
+  if(selectSeason = "Spring"){
+    
+  }
+}
+
+
+
 //Hamburger Menu
 const menu = document.querySelector(".hamburger-menu");
 const menuItems = document.querySelectorAll(".menuItem");

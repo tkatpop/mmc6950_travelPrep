@@ -1,6 +1,9 @@
+//Location Info, Currency, and Weather
+
 //Endpoint URL
 
 var locationURL = "https://restcountries.com/v3.1/"
+var weatherURL = "https://api.openweathermap.org/data/2.5/weather"
 
 //Call items from HTML page
 
@@ -9,6 +12,7 @@ var locationForm = document.querySelector('form')
 var locationSearch = document.getElementById('locationInfo-search')
 var locationInfoDisplay = document.getElementById('locationInfo-display')
 var currencyInfoDisplay = document.getElementById('currencyInfo-display')
+var weatherInfoDisplay = document.getElementById ('weatherInfo-display')
 
 //Input Submit
 
@@ -20,10 +24,20 @@ locationForm.onsubmit = function(e){
 
   //Fetch Information from REST Countries
   var queryString = "name/" + inputValue 
-  // var queryString = inputValue + "?fields=name,region,currencies,languages,flag"
   var fetchURL = locationURL + queryString
   if (!inputValue) return
   fetch(fetchURL)
+
+  //Fetch Information from OpenWeather
+  // var queryStringWeather = "?units=imperial&appid=c9c200ce14c43853eabac39aa7af9892&q=" + inputValue
+  // var fetchURLWeather = weatherURL + queryStringWeather
+  // if (!inputValue) return
+  // fetch(fetchURLWeather)
+
+  // Promise.all([
+  //   fetch(fetchURLLocation),
+  //   fetch(fetchURLWeather)
+  // ])
 
   //Location not found Error
   .then(function(res){
@@ -37,14 +51,36 @@ locationForm.onsubmit = function(e){
       locationSearch.value = ""
   })
 
-  //Show Location Information
+  //Show Location and Weather Information
   .then(showLocation)
-
+  
 }
+
+// function blah(){
+
+//   //Define Input Value
+//   var inputValue = locationSearch.value
+
+//   //Fetch Information from OpenWeather
+//   var queryStringWeather = "?units=imperial&appid=c9c200ce14c43853eabac39aa7af9892&q=" + inputValue
+//   var fetchURLWeather = weatherURL + queryStringWeather
+//   if (!inputValue) return
+//   fetch(fetchURLWeather)
+
+//   .then(showWeather)
+// }
+
+// locationForm.addEventListener("submit", blah);
+
+// locationForm.onsubmit = submitForm()
+
+// function submitForm(){
+//   return duck(e) && blah(w);
+// }
+
 
 //Function to show location information
 function showLocation(location){
-  console.log(location)
   locationInfoDisplay.innerHTML = ""
   locationSearch.value = ""
 
@@ -93,6 +129,31 @@ function showLocation(location){
 
 }
 
+//Function to show Weather Information
+function showWeather(weather){
+
+  //Country Common Name
+  var countryCommonName = document.createElement('h2')
+  countryCommonName.textContent = (location[0].name.common)
+  weatherInfoDisplay.appendChild(countryCommonName)
+
+  //Weather Icon
+  var iconImg = document.createElement('img')
+  iconImg.src = ("https://openweathermap.org/img/wn/" + weather.weather[0].icon + "@2x.png")
+  iconImg.alt = "Weather Icon"
+  weatherInfoDisplay.appendChild(iconImg)
+
+  //Actual Temp
+  var actualTemp = document.createElement('p')
+  actualTemp.textContent =('Current Temp: '+ weather.main.temp)
+  weatherInfoDisplay.appendChild(actualTemp)
+
+  //Description Current Weather
+  var currentWeather = document.createElement('p')
+  currentWeather.textContent = weather.weather[0].description
+  weatherInfoDisplay.appendChild(currentWeather)
+
+}
 
 
 //Hamburger Menu
