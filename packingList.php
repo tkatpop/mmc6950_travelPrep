@@ -47,6 +47,47 @@
                 <!--NEED TO ADD THE SELECTION PAcKING LIST HERE-->
                 <section id="Packing-List-Display">
                     
+                    <ul id="spring/fall-list">
+                        <li>Short sleeve shirts</li>
+                        <li>Sweater/cardigan</li>
+                        <li>Long sleeve shirts</li>
+                        <li>Blouse/buttondown shirt</li>
+                        <li>Jeans/Pants</li>
+                        <li>Dress/Dinnerwear</li>
+                        <li>Walking shoes</li>
+                        <li>Dress shoes</li>
+                        <li>Optional: Scarf</li>
+                        <li>Optional: Hat</li>
+                    </ul>
+
+                    <ul id="summer-list">
+                        <li>Shorts</li>
+                        <li>Short sleeve shirts</li>
+                        <li>Lightweight layer/windbreaker</li>
+                        <li>Short sleeve blouse/buttondown shirt</li>
+                        <li>Dress/Dinnerwear</li>
+                        <li>Jean/Pant</li>
+                        <li>Walking shoes</li>
+                        <li>Dress shoes</li>
+                        <li>Sandals/Flip flops</li>
+                        <li>Optional: Swimwear</li>
+                        <li>Optional: Sunshield hat</li>
+                    </ul>
+
+                    <ul id="winter-list">
+                        <li>Long sleeve shirts</li>
+                        <li>Sweaters/cardigans</li>
+                        <li>Coat</li>
+                        <li>Thermal base layer</li>
+                        <li>Jeans/Pants</li>
+                        <li>Thick dinnerwear/Sweater dress</li>
+                        <li>Walking Boots</li>
+                        <li>Dress Boots</li>
+                        <li>Scarf</li>
+                        <li>Gloves</li>
+                        <li>Warm hat</li>
+                    </ul>
+                    
 
                 </section>
 

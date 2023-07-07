@@ -13,12 +13,18 @@ function seasonList(){
   packingListSeason.textContent = ("Packing List Recommended for Season: " + selectSeason)
   packingListDisplay.appendChild(packingListSeason)
 
-  if(selectSeason = "Spring"){
-    
-  }
+  if(selectSeason = "Spring" || "Fall/Autumn"){
+    document.getElementById('spring/fall-list').style.display="block"
+  }if(selectSeason = "Winter"){
+    document.getElementById('winter-list').style.display="block"
+  }if(selectSeason = "Summer"){
+    document.getElementById('summer-list').style.display="block"
+  }else(
+    document.getElementById('spring/fall-list').style.display="none",
+    document.getElementById('winter-list').style.display="none",
+    document.getElementById('summer-list').style.display="none"
+  )
 }
-
-
 
 //Hamburger Menu
 const menu = document.querySelector(".hamburger-menu");
