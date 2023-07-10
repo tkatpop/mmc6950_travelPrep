@@ -133,9 +133,9 @@ function showLocation(location){
 function showWeather(weather){
 
   //Country Common Name
-  var countryCommonName = document.createElement('h2')
-  countryCommonName.textContent = (location[0].name.common)
-  weatherInfoDisplay.appendChild(countryCommonName)
+  var countryCommonNameWeather = document.createElement('h2')
+  countryCommonNameWeather.textContent = (countryCommonName)
+  weatherInfoDisplay.appendChild(countryCommonNameWeather)
 
   //Weather Icon
   var iconImg = document.createElement('img')

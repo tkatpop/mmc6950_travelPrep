@@ -14,24 +14,24 @@ document.getElementById('season').onchange = function seasonList(){
   var packingListSeason = document.getElementById('List-Title')
   packingListSeason.innerHTML = ("Packing List Recommended for Season: " + document.getElementById('season').value)
 
-  var selectSpring = document.getElementById('Spring')
-  var selectSummer = document.getElementById('Summer')
-  var selectFall = document.getElementById('Fall')
-  var selectWinter = document.getElementById('Winter')
+  var selected_season = document.getElementById('season').value
 
-  if( selectSpring || selectFall ){
-    document.getElementById('spring-fall-list').style.display="block",
-    document.getElementById('winter-list').style.display="none",
-    document.getElementById('summer-list').style.display="none";
-  }if(selectWinter){
-    document.getElementById('winter-list').style.display="block",
-    document.getElementById('spring-fall-list').style.display="none",
-    document.getElementById('summer-list').style.display="none";
-  }if (selectSummer){
+  if(document.getElementById('season').value == "Summer")
+  {
     document.getElementById('summer-list').style.display="block",
     document.getElementById('spring-fall-list').style.display="none",
     document.getElementById('winter-list').style.display="none";
-  };
+  } else if(document.getElementById('season').value == "Winter")
+  {
+    document.getElementById('winter-list').style.display="block",
+    document.getElementById('spring-fall-list').style.display="none",
+    document.getElementById('summer-list').style.display="none";
+  }else
+  {
+    document.getElementById('spring-fall-list').style.display="block",
+    document.getElementById('winter-list').style.display="none",
+    document.getElementById('summer-list').style.display="none";
+  }
 
 }
 

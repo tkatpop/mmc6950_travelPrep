@@ -38,10 +38,10 @@
                 <label for="season">Which season are you packing for? </label>
                 <select name="season" id="season">
                     <option value="choose" id="Choose" selected>Choose A Season</option>
-                    <option value="Spring" id="Spring">Spring</option>
-                    <option value="Summer" id="Summer">Summer</option>
-                    <option value="Fall/Autumn" id="Fall">Fall/Autumn</option>
-                    <option value="Winter" id="Winter">Winter</option>
+                    <option value="Spring" >Spring</option>
+                    <option value="Summer" >Summer</option>
+                    <option value="Fall/Autumn" >Fall/Autumn</option>
+                    <option value="Winter" >Winter</option>
                 </select>
 
                 <!--NEED TO ADD THE SELECTION PAcKING LIST HERE-->
