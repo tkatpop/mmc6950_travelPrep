@@ -58,7 +58,9 @@
 
             <section id="right_currencyInfo"><!--API currency info shows up here-->
                 <h4>Currency</h4>
-                <div id="currencyInfo-display"></div>
+                <div id="currencyInfo-display">
+                    <h5 id="currencyInfo-title"></h5>
+                </div>
             </section> 
 
         </div> <!--Closing tag for #container-->

@@ -84,15 +84,18 @@ function showLocation(location){
   locationInfoDisplay.innerHTML = ""
   locationSearch.value = ""
 
+
   //Country Common Name
   var countryCommonName = document.createElement('h2')
   countryCommonName.textContent = (location[0].name.common)
   locationInfoDisplay.appendChild(countryCommonName)
 
+
   //Country Official Name
   var countryOfficialName = document.createElement('h4')
   countryOfficialName.textContent = ("Official Name: " + location[0].name.official)
   locationInfoDisplay.appendChild(countryOfficialName)
+
 
   //Country Flag
   var flagImg = document.createElement('img')
@@ -100,19 +103,32 @@ function showLocation(location){
   flagImg.alt = (location[0].flags.alt)
   locationInfoDisplay.appendChild(flagImg)
 
+
   //Country Region
   var countryRegion = document.createElement('h4')
   countryRegion.textContent = ("Region: " + location[0].region)
   locationInfoDisplay.appendChild(countryRegion)
+
 
   //Country Capital
   var countryCapital = document.createElement('h4')
   countryCapital.textContent = ("Capital: " + location[0].capital)
   locationInfoDisplay.appendChild(countryCapital)
 
+
+
+
   //Country Language- - MIGHT NEED A FOR LOOP TO RETREIVE VALUES
   var countryLang = document.createElement('h4')
-  countryLang.textContent = ("Language(s): " + location[0].languages)
+  var country_languages = []
+  let count = 0
+
+  for (let properties in location[0].languages) {
+    country_languages[count] = location[0].languages[properties]
+    count = count + 1
+  }
+
+  countryLang.textContent = ("Language(s): " + country_languages)
   locationInfoDisplay.appendChild(countryLang)
 
   //Google Map Link
@@ -122,9 +138,20 @@ function showLocation(location){
   googleMap.textContent = "Click to view map"
   locationInfoDisplay.appendChild(googleMap)
 
+
   //Country Currency- MIGHT NEED A FOR LOOP TO RETREIVE VALUES
   var countryCurrency = document.createElement('h4')
-  countryCurrency.textContent = ("Primary Currency: " + location[0].currencies)
+  var country_moneys = []
+  let count1 = 0
+  
+  for (let properties in location[0].currencies) {
+
+    country_moneys[count1] = location[0].currencies[properties].name
+    count1 = count1 + 1
+
+  }
+
+  countryCurrency.textContent = ("Primary Currency: " + country_moneys)
   currencyInfoDisplay.appendChild(countryCurrency)
 
 }
