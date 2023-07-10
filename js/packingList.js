@@ -1,29 +1,38 @@
 //Packing List Season Dropdown Selection
 
 var packingForm = document.getElementById('packingForm')
-var selectSeason = document.getElementById('season').value
+// var selectSeason = document.getElementById('season')
 var packingListDisplay = document.getElementById('Packing-List-Display')
 // var selectSpring = document.getElementById('Spring')
 // var selectSummer = document.getElementById('Summer')
 // var selectFall = document.getElementById('Fall')
 // var selectWinter = document.getElementById('Winter')
+// var selectChoose = document.getElementById('Choose')
 
-function seasonList(){
-  var packingListSeason = document.createElement('h4')
-  packingListSeason.textContent = ("Packing List Recommended for Season: " + selectSeason)
-  packingListDisplay.appendChild(packingListSeason)
+document.getElementById('season').onchange = function seasonList(){
 
-  if(selectSeason = "Spring" || "Fall/Autumn"){
-    document.getElementById('spring/fall-list').style.display="block"
-  }if(selectSeason = "Winter"){
-    document.getElementById('winter-list').style.display="block"
-  }if(selectSeason = "Summer"){
-    document.getElementById('summer-list').style.display="block"
-  }else(
-    document.getElementById('spring/fall-list').style.display="none",
+  var packingListSeason = document.getElementById('List-Title')
+  packingListSeason.innerHTML = ("Packing List Recommended for Season: " + document.getElementById('season').value)
+
+  var selectSpring = document.getElementById('Spring')
+  var selectSummer = document.getElementById('Summer')
+  var selectFall = document.getElementById('Fall')
+  var selectWinter = document.getElementById('Winter')
+
+  if( selectSpring || selectFall ){
+    document.getElementById('spring-fall-list').style.display="block",
     document.getElementById('winter-list').style.display="none",
-    document.getElementById('summer-list').style.display="none"
-  )
+    document.getElementById('summer-list').style.display="none";
+  }if(selectWinter){
+    document.getElementById('winter-list').style.display="block",
+    document.getElementById('spring-fall-list').style.display="none",
+    document.getElementById('summer-list').style.display="none";
+  }if (selectSummer){
+    document.getElementById('summer-list').style.display="block",
+    document.getElementById('spring-fall-list').style.display="none",
+    document.getElementById('winter-list').style.display="none";
+  };
+
 }
 
 //Hamburger Menu

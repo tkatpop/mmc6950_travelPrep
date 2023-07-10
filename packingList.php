@@ -37,7 +37,7 @@
                 <!--List of recommended clothes that changes with season drop down-->
                 <label for="season">Which season are you packing for? </label>
                 <select name="season" id="season">
-                    <option value="choose" selected>Choose A Season</option>
+                    <option value="choose" id="Choose" selected>Choose A Season</option>
                     <option value="Spring" id="Spring">Spring</option>
                     <option value="Summer" id="Summer">Summer</option>
                     <option value="Fall/Autumn" id="Fall">Fall/Autumn</option>
@@ -46,8 +46,9 @@
 
                 <!--NEED TO ADD THE SELECTION PAcKING LIST HERE-->
                 <section id="Packing-List-Display">
+                    <h4 id="List-Title"></h4>
                     
-                    <ul id="spring/fall-list">
+                    <ul id="spring-fall-list">
                         <li>Short sleeve shirts</li>
                         <li>Sweater/cardigan</li>
                         <li>Long sleeve shirts</li>

@@ -79,6 +79,11 @@ Packing List Page
 
 ****************/
 
+#spring-fall-list,
+#winter-list,
+#summer-list{
+	display:none;
+}
 /***************
 
 Travel Information Page
