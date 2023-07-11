@@ -140,7 +140,7 @@ function showLocation(location){
 
 
   //Country Currency- MIGHT NEED A FOR LOOP TO RETREIVE VALUES
-  var countryCurrency = document.createElement('h4')
+  var countryCurrency = document.getElementById('currencyInfo-title')
   var country_moneys = []
   let count1 = 0
   
