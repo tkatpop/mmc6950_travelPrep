@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -33,12 +37,18 @@
 
             <div>
                 <!--ADD PHP WELCOME WITH USER NAME-->
-                <h1>Additional Information</h1>
+                <?php
+                    echo "<p>Welcome, " . $_SESSION["useruid"] . "</p>";
+                ?>
             </div>
 
 
 
+
+
         </div> <!--Closing tag for #container-->
+
+
         <footer id="footer">
              <!--Footer nav bar after logged in-->
              <ul class="footer-menu">

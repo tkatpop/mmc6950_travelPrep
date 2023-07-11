@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+session_unset();
+session_destroy();
+
+header("location: ../login.php");
+exit();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,8 +24,6 @@
     <body>
         <section>
             <h2>LOGOUT</h2>
-            <!--LOGOUT FUNCTION APPLIED HERE-->
-
             <div><p>Accidentlly logged out? <a href="login.php">Login Back in Here</a></p></div>
         </section>
     
