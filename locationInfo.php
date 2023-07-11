@@ -49,12 +49,7 @@
 
                 <!--API location info shows up here-->
                 <div id="locationInfo-display"></div>
-            </section> 
-
-            <section id="right_weatherInfo"><!--API weather info shows up here-->
-                <h4>Weather</h4>
-                <div id="weatherInfo-display"></div>
-            </section> 
+            </section>  
 
             <section id="right_currencyInfo"><!--API currency info shows up here-->
                 <h4>Currency</h4>
