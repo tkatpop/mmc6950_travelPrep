@@ -75,7 +75,7 @@
 
         mysqli_stmt_close($stmt);
 
-        header("location: ../signup.php?error=none");
+        header("location: ../main.php");
 
         exit();
 
@@ -111,7 +111,7 @@
             session_start();
             $_SESSION["userid"] = $uidExists["usersId"];
             $_SESSION["useruid"] = $uidExists["usersUid"];
-            header("location: ../login.php?error=nonelog");
+            header("location: ../main.php");
             exit(); 
         }
 
