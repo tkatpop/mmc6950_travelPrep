@@ -38,9 +38,15 @@
             <div>
                 <!--ADD PHP WELCOME WITH USER NAME-->
                 <?php
-                    echo "<p>Welcome, " . $_SESSION["useruid"] . "</p>";
+                    echo "<h1>Welcome, " . $_SESSION["useruid"] . "</h1>";
                 ?>
             </div>
+
+            <section> <!--Images associated with each page used here for links as background-->
+                
+                <a class="menuItem" href="locationInfo.php">Location Information</a>
+                <a class="menuItem" href="packingList.php">Packing List</a>
+            </section>
 
 
 
