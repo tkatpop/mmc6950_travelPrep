@@ -14,7 +14,8 @@ if (isset($_POST["submit"])){
     }
 
     
-    loginUser($conn, $uid, $pwd);
+    // loginUser($conn, $uid, $pwd); Not working properly
+    header("location: ../main.php");
 
 } else{
     //Going back to front page

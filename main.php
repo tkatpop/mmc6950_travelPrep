@@ -35,12 +35,7 @@
         
             <!--This is where the content goes-->
 
-            <div>
-                <!--ADD PHP WELCOME WITH USER NAME-->
-                <?php
-                    echo "<h1>Welcome, " . $_SESSION["useruid"] . "</h1>";
-                ?>
-            </div>
+            <h1>Welcome Traveller!</h1>
 
             <section> <!--Images associated with each page used here for links as background-->
                 
