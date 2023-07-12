@@ -3,9 +3,9 @@
 //Database Handler
 
 $serverName = "localhost";
-$dbUserName = "root"; //Need to change when put on domain phpMyAdmin
-$dbPassword = "root"; //Need to change when put on domain phpMyAdmin
-$dbName = "mmc6950_travelprep"; //Make sure this matches the one on the domain
+$dbUserName = "traveller2023"; 
+$dbPassword = "kV!ei9srj]78x9d"; 
+$dbName = "mmc6950_travelprep"; 
 
 $conn = mysqli_connect($serverName, $dbUserName, $dbPassword, $dbName);
 
