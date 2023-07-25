@@ -53,9 +53,10 @@
 
     <footer>
         <!--Simplified footer with only Login Link, Signup Link, and copyright-->
-        <h4><a href="signup.php">Sign Up!</a></h4>
-        <h4>&copy;TravelPrep2023</h4>
-        <h4><a href="login.php">Login!</a></h4>
+        <h4><a href="signup.php">SIGNUP</a></h4>
+        <h4>&copy;travelPrep2023</h4>
+        <h4><a href="login.php">LOGIN</a></h4>
+        <br>
         <p>This website is for educational purposes only.</p>
     </footer>
     

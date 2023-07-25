@@ -21,18 +21,21 @@ session_destroy();
     </header>
 
     <body class="cover_container">
-        <section>
-            <h2>LOGOUT</h2>
-            <div><p>Accidentlly logged out? <a href="login.php">Login Back in Here</a></p></div>
+        <section class="index-logout">
+            <h2>You have successfully logged out!</h2>
+            <p>If this was by accident, log back in here</p>
+            <br>
+            <a href="login.php">LOGIN</a>
         </section>
     
     </body>
 
     <footer>
         <!--Simplified footer with only Login Link, Signup Link, and copyright-->
-        <h4><a href="signup.php">Sign Up!</a></h4>
-        <h4>&copy;TravelPrep2023</h4>
-        <h4><a href="login.php">Login!</a></h4>
+        <h4><a href="signup.php">SIGNUP</a></h4>
+        <h4>&copy;travelPrep2023</h4>
+        <h4><a href="login.php">LOGIN</a></h4>
+        <br>
         <p>This website is for educational purposes only.</p>
     </footer>
     

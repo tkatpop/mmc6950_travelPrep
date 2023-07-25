@@ -63,17 +63,58 @@ font-weight: 500;
 font-style: normal;
 **/
 
+header,
+footer,
+body{
+	color: #3E2614;
+	margin: 0 auto;
+}
+
+header a ,
+footer a,
+body a{
+	text-decoration: none;
+	color: #3E2614;
+}
+
 /***************
 
 Header
 
 ****************/
 
+
+
 /***************
 
 Footer
 
 ****************/
+
+footer{
+	background-color: #8FA698;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+footer a{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+footer h4{
+	display: inline;
+	padding: 10px;
+}
+
+footer p{
+	padding: 10px;
+}
 
 /***************
 
@@ -84,7 +125,55 @@ Index, SignUp, Login, and Logout Pages
 .cover_container{
 	background-image: url(../images/leather_background.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: auto;
+	background-position-x: center;
+	text-align: center;
+}
+
+.cover_container_welcome,
+.index-login,
+.index-logout{
+	background-color: #D9D1C6;
+	padding: 10%;
+	margin-top: 50px;
+}
+
+.cover_container header{
+	background-color: #8FA698;
+}
+
+.cover_container img{
+	padding-left: 7%;
+	max-width: 60%;
+}
+
+.index-logout a,
+.index-login a,
+.cover_container_welcome a{
+	background-color: #3E2614;
+	color: #BEB18F;
+    padding: 15px 50px;
+    border-radius: 5px;
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.index-logout h2{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	padding: 10px;
+	font-size: 1.2em;
+
+}
+.index-logout p{
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	padding: 15px;
+	
+
 }
 
 /***************
@@ -96,7 +185,8 @@ Main, AddLinks, Location, Packing Pages
 .journal_container{
 	background-image: url(../images/paper_background.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-position-x: center;
+	background-size: auto;
 }
 
 /***************
@@ -128,10 +218,50 @@ Media Responsive Queries
 
 ****************/
 
-@media only screen and (min-width: 600px) {
+
+@media screen and (min-width: 768px) {
+	.cover_container_welcome,
+	.index-login,
+	.index-logout{
+		border: 5px #BE6328 solid;
+		max-width: 60%;
+		margin: 0 auto;
+		padding: 70px;
+		
+	}
+
+	.cover_container header{
+		background-color: transparent;
+	}
+
+	.cover_container img{
+		max-width: 40%;
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+
+	footer{
+		margin-top: 100px;
+    	position: relative;
+	}
+
+	footer h4{
+		padding: 0 10%;
+	}
 
 }
 
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+
+	.cover_container img{
+		max-width: 30%;
+	}
+
+	.cover_container_welcome,
+	.index-login,
+	.index-logout{
+		max-width: 50%;
+	}
+
 
 }
