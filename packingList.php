@@ -33,8 +33,8 @@
         </nav>
     </header>
 
-    <body>
-       <div id="container">
+    <body class="journal_container">
+       <div>
             <!--This is where the content goes-->
 
             <h1>Need help packing?</h1>

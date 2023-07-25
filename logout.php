@@ -20,7 +20,7 @@ session_destroy();
         <img src="images/logo_darkB.png" alt="travelPrep Logo"> 
     </header>
 
-    <body>
+    <body class="cover_container">
         <section>
             <h2>LOGOUT</h2>
             <div><p>Accidentlly logged out? <a href="login.php">Login Back in Here</a></p></div>

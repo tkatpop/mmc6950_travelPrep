@@ -29,8 +29,8 @@
         </nav>
     </header>
 
-    <body>
-       <div id="container">
+    <body class="journal_container">
+       <div>
             <!--This is where the content goes-->
 
             <h1>Additional Information</h1>

@@ -81,7 +81,23 @@ Index, SignUp, Login, and Logout Pages
 
 ****************/
 
+.cover_container{
+	background-image: url(../images/leather_background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
+/***************
+
+Main, AddLinks, Location, Packing Pages
+
+****************/
+
+.journal_container{
+	background-image: url(../images/paper_background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 /***************
 

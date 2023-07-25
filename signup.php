@@ -12,7 +12,7 @@
         <img src="images/logo_darkB.png" alt="travelPrep Logo"> 
     </header>
 
-    <body>
+    <body class="cover_container">
         <section class="index-login">
             <h2>SIGNUP</h2>
             <!--Form section-->
