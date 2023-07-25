@@ -10,6 +10,7 @@
 
     <header>
         <!--LOGO goes here-->
+        <img src="images/logo_darkB.png" alt="travelPrep Logo" class="main_logo"> 
         
         <!--Header nav bar after logged in-->
         <nav>
