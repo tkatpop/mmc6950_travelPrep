@@ -7,6 +7,8 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/style.css" media="all"/>
+        <!--Adobe Fonts-->
+        <link rel="stylesheet" href="https://use.typekit.net/uuu4lfb.css">
         <title>TravelPrep</title>
     </head>
 
