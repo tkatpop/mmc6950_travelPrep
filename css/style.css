@@ -84,6 +84,14 @@ Header
 
 ****************/
 
+/****NAV*****/
+
+.hamburger{
+	color:#BE6328;
+}
+
+
+
 
 
 /***************
@@ -114,6 +122,10 @@ footer h4{
 
 footer p{
 	padding: 10px;
+}
+
+.large_footer_nav{
+	display: none;
 }
 
 /***************
@@ -224,8 +236,22 @@ Main, AddLinks, Location, Packing Pages
 .journal_container{
 	background-image: url(../images/paper_background.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 	background-position-x: center;
-	background-size: auto;
+	text-align: center;
+}
+
+.journal_container header{
+	background-color: #8FA698;
+}
+
+#main-menu a{
+	display: none;
+}
+
+.main_logo{
+	padding-left: 7%;
+	max-width: 60%;
 }
 
 /***************
@@ -259,6 +285,26 @@ Media Responsive Queries
 
 
 @media screen and (min-width: 768px) {
+	#main-menu a{
+		font-family: "neue-haas-grotesk-text", sans-serif;
+		font-weight: 500;
+		font-style: normal;
+		display: inline-block;
+	}
+
+	#main-menu li{
+		display: inline-block;
+
+	}
+
+	.hamburger{
+		display: none;
+	}
+
+	.main_logo{
+		display: block;
+	}
+
 	.cover_container_welcome,
 	.index-login,
 	.index-logout{
@@ -300,6 +346,10 @@ Media Responsive Queries
 
 	footer h4{
 		padding: 0 10%;
+	}
+
+	.large_footer_nav{
+		display: inline-block;
 	}
 
 }

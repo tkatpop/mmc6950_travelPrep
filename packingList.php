@@ -9,26 +9,36 @@
         <link rel="stylesheet" href="css/style.css" media="all"/>
         <!--Adobe Fonts-->
         <link rel="stylesheet" href="https://use.typekit.net/uuu4lfb.css">
+        <!--FontAwesome Link-->
+        <script src="https://kit.fontawesome.com/864d9add69.js" crossorigin="anonymous"></script>
         <title>TravelPrep</title>
     </head>
 
     <header>
-        <!--LOGO goes here-->
-        <img src="images/logo_darkB.png" alt="travelPrep Logo" class="main_logo"> 
         
+        <div class="hamburger">
+            <a href="javascript:void(0)" class="hamburger"><i class="fa fa-bars"></i></a>
+            <div class="hamburger-menu">
+                <a href="main.php">HOME</a>
+                <a href="packingList.php">PACKING LIST</a>
+                <a href="locationInfo.php">LOCATIONS</a>
+                <a href="addLinks.php">ADDITIONAL INFO</a>
+                <a href="logout.php">LOGOUT</a>
+            </div>
+
+        </div>
+
+        <!--LOGO goes here-->
+        <div><a href="main.php"><img src="images/logo_darkB.png" alt="travelPrep Logo" class="main_logo"></a></div>
+
         <!--Header nav bar after logged in-->
         <nav>
-            <button class="hamburger-btn">
-                <i class="menuIcon material-icons">menu</i>
-                <i class="closeIcon material-icons">close</i>
-            </button>
-
-            <ul class="hamburger-menu" id="main-menu">
-                <li><a class="menuItem" href="main.php">Home</a></li>
-                <li><a class="menuItem" href="packingList.php">Packing List</a></li>
-                <li><a class="menuItem" href="locationInfo.php">Locations</a></li>
-                <li><a class="menuItem" href="addLinks.php">Additional Info</a></li>
-                <li><a class="menuItem" href="logout.php">Logout</a></li>
+            <ul id="main-menu">
+                <li><a href="main.php">HOME</a></li>
+                <li><a  href="packingList.php">PACKING LIST</a></li>
+                <li><a href="locationInfo.php">LOCATIONS</a></li>
+                <li><a href="addLinks.php">ADDITIONAL INFO</a></li>
+                <li><a href="logout.php">LOGOUT</a></li>
             </ul>
         </nav>
     </header>
@@ -105,17 +115,17 @@
             
 
         </div> <!--Closing tag for #container-->
-        <footer id="footer">
-            <ul class="footer-menu">
-                <li><a  href="main.php">Home</a></li>
-                <li><a  href="packingList.php">Packing List</a></li>
-                <li><a  href="locationInfo.php">Locations</a></li>
-                <li><a  href="addLinks.php">Additional Info</a></li>
-            </ul>
+        <footer id="footer" class="welcome_footer">
+            <a  href="main.php">HOME</a>
+            <div class="large_footer_nav">
+                <a  href="packingList.php">PACKING LIST</a>
+                <a  href="locationInfo.php">LOCATIONS</a>
+                <a  href="addLinks.php">ADDITIONAL INFORMATION</a>
+            </div>
+            <a  href="logout.php">LOGOUT</a>
 
-            &copy; <?php echo date('Y'); ?> 
+            <p>&copy;travelPrep <?php echo date('Y'); ?> </p>
 
-            <h4><a href="logout.php">Logout</a></h4>
         </footer>
 
         <script src="js/packingList.js"></script>
