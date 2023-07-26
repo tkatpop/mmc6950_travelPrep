@@ -321,8 +321,21 @@ Media Responsive Queries
 
 
 @media screen and (min-width: 768px) {
+	#journal_header_container{
+		align-items: center;
+	}
+
+	#journal_header_container nav{
+		justify-content: center;
+		background-color: #8FA698;
+
+	}
+
 	#main-menu{
-		display:inherit;
+		display:flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 30px 10px;
 	}
 	
 	#main-menu a{
@@ -330,6 +343,7 @@ Media Responsive Queries
 		font-weight: 500;
 		font-style: normal;
 		display: inline-block;
+		padding: 0 10px;
 	}
 
 	#main-menu li{
@@ -347,6 +361,15 @@ Media Responsive Queries
 
 	.main_logo{
 		display: block;
+		padding:10px;
+		background: transparent;
+	}
+
+	#journal_header_container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		background: transparent;
 	}
 
 	.cover_container_welcome,
@@ -382,6 +405,10 @@ Media Responsive Queries
 		margin-bottom: 30px;
 	}
 
+	.journal_container header{
+		background-color: transparent;
+	}
+
 	footer,
 	.welcome_footer{
 		margin-top: 100px;
@@ -394,6 +421,10 @@ Media Responsive Queries
 
 	.large_footer_nav{
 		display: inline-block;
+	}
+
+	.welcome_footer a{
+		padding: 0 10px;
 	}
 
 }
@@ -412,6 +443,10 @@ Media Responsive Queries
 	.index-login,
 	.index-logout{
 		max-width: 50%;
+	}
+
+	.main_logo{
+		padding: 20px;
 	}
 
 

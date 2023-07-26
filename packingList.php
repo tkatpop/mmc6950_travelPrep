@@ -29,18 +29,21 @@
         </div>
 
         <!--LOGO goes here-->
-        <div><a href="main.php"><img src="images/logo_darkB.png" alt="travelPrep Logo" class="main_logo"></a></div>
+        <div id="journal_header_container">
+            <a href="main.php"><img src="images/logo_darkB.png" alt="travelPrep Logo" class="main_logo"></a>
 
         <!--Header nav bar after logged in-->
-        <nav>
-            <ul id="main-menu">
-                <li><a href="main.php">HOME</a></li>
-                <li><a  href="packingList.php">PACKING LIST</a></li>
-                <li><a href="locationInfo.php">LOCATIONS</a></li>
-                <li><a href="addLinks.php">ADDITIONAL INFO</a></li>
-                <li><a href="logout.php">LOGOUT</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="main.php">HOME</a></li>
+                    <li><a  href="packingList.php">PACKING LIST</a></li>
+                    <li><a href="locationInfo.php">LOCATIONS</a></li>
+                    <li><a href="addLinks.php">ADDITIONAL INFO</a></li>
+                    <li><a href="logout.php">LOGOUT</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
     <body class="journal_container">
