@@ -138,6 +138,10 @@ Index, SignUp, Login, and Logout Pages
 	margin-top: 50px;
 }
 
+.cover_container_welcome p{
+	margin: 10px auto;
+}
+
 .cover_container header{
 	background-color: #8FA698;
 }
@@ -147,6 +151,10 @@ Index, SignUp, Login, and Logout Pages
 	max-width: 60%;
 }
 
+.welcome_footer{
+	position: absolute;
+}
+
 .index-logout a,
 .index-login a,
 .cover_container_welcome a{
@@ -154,7 +162,7 @@ Index, SignUp, Login, and Logout Pages
 	color: #BEB18F;
     padding: 15px 50px;
     border-radius: 5px;
-	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-family: "neue-haas-grotesk-text", sans-serif;
 	font-weight: 500;
 	font-style: normal;
 }
@@ -168,6 +176,7 @@ Index, SignUp, Login, and Logout Pages
 	font-size: 1.2em;
 
 }
+
 .index-logout p,
 .index-login p{
 	font-family: "neue-haas-grotesk-display", sans-serif;
@@ -264,13 +273,27 @@ Media Responsive Queries
 		background-color: transparent;
 	}
 
+	.cover_container_welcome{
+		margin: 50px auto;
+	}
+
 	.cover_container img{
 		max-width: 40%;
 		padding-bottom: 50px;
 		padding-top: 50px;
 	}
 
-	footer{
+	.cover_container_welcome img{
+		max-width: 60%;
+		padding-bottom: 0;
+	}
+
+	.cover_container_welcome p{
+		margin-bottom: 30px;
+	}
+
+	footer,
+	.welcome_footer{
 		margin-top: 100px;
     	position: relative;
 	}
@@ -285,6 +308,10 @@ Media Responsive Queries
 
 	.cover_container img{
 		max-width: 30%;
+	}
+
+	.cover_container_welcome img{
+		max-width: 50%;
 	}
 
 	.cover_container_welcome,
