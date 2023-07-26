@@ -89,6 +89,7 @@ Header
 .topnav{
 	text-align: left;
 	padding: 20px;
+	float: left;
 }
 
 .hamburger{
@@ -288,6 +289,7 @@ Main, AddLinks, Location, Packing Pages
 
 .main_logo{
 	max-width: 300px;
+	padding: 20px 0;
 }
 
 /***************

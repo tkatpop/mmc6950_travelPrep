@@ -128,6 +128,8 @@
             <a  href="logout.php">LOGOUT</a>
 
             <p>&copy;travelPrep <?php echo date('Y'); ?> </p>
+            <br>
+            <p>This website is for educational purposes only.</p>
 
         </footer>
 
