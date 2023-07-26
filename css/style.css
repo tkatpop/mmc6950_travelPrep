@@ -86,10 +86,50 @@ Header
 
 /****NAV*****/
 
-.hamburger{
-	color:#BE6328;
+.topnav{
+	text-align: left;
+	padding: 20px;
 }
 
+.hamburger{
+	color:#BE6328;
+	font-size: 2em;
+}
+
+.hamburger:hover{
+	color:#3E2614;
+}
+
+.hamburger-menu{
+	display:none;
+	position: absolute;
+	background-color: #3E2614;
+	z-index:1;
+}
+
+.hamburger-menu a{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	padding: 12px 16px;
+	color:#D9D1C6;
+	display: block;
+	text-align: center;
+}
+
+.hamburger-menu a:hover{
+	background-color: #8FA698;
+	border:#3E2614 solid 5px;
+	color: #3E2614;
+}
+
+.topnav:hover .hamburger-menu{
+	display: block;
+}
+
+#main-menu{
+	display: none;
+}
 
 
 
@@ -245,13 +285,9 @@ Main, AddLinks, Location, Packing Pages
 	background-color: #8FA698;
 }
 
-#main-menu a{
-	display: none;
-}
 
 .main_logo{
-	padding-left: 7%;
-	max-width: 60%;
+	max-width: 300px;
 }
 
 /***************
@@ -285,6 +321,10 @@ Media Responsive Queries
 
 
 @media screen and (min-width: 768px) {
+	#main-menu{
+		display:inherit;
+	}
+	
 	#main-menu a{
 		font-family: "neue-haas-grotesk-text", sans-serif;
 		font-weight: 500;
@@ -298,6 +338,10 @@ Media Responsive Queries
 	}
 
 	.hamburger{
+		display: none;
+	}
+
+	.topnav{
 		display: none;
 	}
 

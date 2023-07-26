@@ -17,7 +17,7 @@
 
     <header>
         
-        <div class="hamburger">
+        <div class="topnav">
             <a href="javascript:void(0)" class="hamburger"><i class="fa fa-bars"></i></a>
             <div class="hamburger-menu">
                 <a href="main.php">HOME</a>
