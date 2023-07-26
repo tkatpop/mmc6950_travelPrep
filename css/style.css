@@ -177,7 +177,7 @@ Index, SignUp, Login, and Logout Pages
 	
 }
 
-.index-login .index-login-signup form input{
+.index-login form input{
 	border: 5px #BE6328 solid;
 	display:block;
 	margin: 10px auto;

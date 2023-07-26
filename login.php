@@ -23,7 +23,9 @@
                     <button type="submit" name="submit">Login</button>
                 </form>
 
-            <div><p>Not a member? <a href="signup.php">Sign Up Here</a></p></div>
+            <p>Not a member?</p> 
+            <br>
+            <a href="signup.php">Sign Up Here</a>
 
             <?php
                 if (isset($_GET["error"])){
