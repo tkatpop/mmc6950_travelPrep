@@ -317,6 +317,14 @@ Packing List Page
 #summer-list{
 	display:none;
 }
+
+#noteSection{
+	border: 5px #BE6328 solid;
+	padding: 10px;
+    margin: 10px;
+}
+
+
 /***************
 
 Travel Information Page
