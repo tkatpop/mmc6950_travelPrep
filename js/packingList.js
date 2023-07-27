@@ -15,16 +15,19 @@ document.getElementById('season').onchange = function seasonList(){
   if(document.getElementById('season').value == "Summer")
   {
     document.getElementById('summer-list').style.display="block",
+    document.getElementById('Packing-List-Display').style.border="5px #BE6328 solid",
     document.getElementById('spring-fall-list').style.display="none",
     document.getElementById('winter-list').style.display="none";
   } else if(document.getElementById('season').value == "Winter")
   {
     document.getElementById('winter-list').style.display="block",
+    document.getElementById('Packing-List-Display').style.border="5px #BE6328 solid",
     document.getElementById('spring-fall-list').style.display="none",
     document.getElementById('summer-list').style.display="none";
   }else
   {
     document.getElementById('spring-fall-list').style.display="block",
+    document.getElementById('Packing-List-Display').style.border="5px #BE6328 solid",
     document.getElementById('winter-list').style.display="none",
     document.getElementById('summer-list').style.display="none";
   }
