@@ -58,7 +58,7 @@ function showLocation(location){
 
   //Country Official Name
   var countryOfficialName = document.createElement('h4')
-  countryOfficialName.textContent = ("Official Name: " + location[0].name.official)
+  countryOfficialName.textContent = ("OFFICIAL NAME: " + location[0].name.official)
   locationInfoDisplay.appendChild(countryOfficialName)
 
 
@@ -71,13 +71,13 @@ function showLocation(location){
 
   //Country Region
   var countryRegion = document.createElement('h4')
-  countryRegion.textContent = ("Region: " + location[0].region)
+  countryRegion.textContent = ("REGION: " + location[0].region)
   locationInfoDisplay.appendChild(countryRegion)
 
 
   //Country Capital
   var countryCapital = document.createElement('h4')
-  countryCapital.textContent = ("Capital: " + location[0].capital)
+  countryCapital.textContent = ("CAPITAL: " + location[0].capital)
   locationInfoDisplay.appendChild(countryCapital)
 
   //Country Language
@@ -90,14 +90,14 @@ function showLocation(location){
     count = count + 1
   }
 
-  countryLang.textContent = ("Language(s): " + country_languages)
+  countryLang.textContent = ("LANGUAGE(S): " + country_languages)
   locationInfoDisplay.appendChild(countryLang)
 
   //Google Map Link
   var googleMap = document.createElement('a')
   googleMap.target = '_blank'
   googleMap.href = ("https://www.google.com/maps/search/?api=1&query=" + location[0].latlng[0] + "," + location[0].latlng[1]) 
-  googleMap.textContent = "Click to view map"
+  googleMap.textContent = "Click to view location on Google maps"
   locationInfoDisplay.appendChild(googleMap)
 
 
@@ -113,7 +113,7 @@ function showLocation(location){
 
   }
 
-  countryCurrency.textContent = ("Primary Currency: " + country_moneys)
+  countryCurrency.textContent = ("PRIMARY CURRENCY: " + country_moneys)
   currencyInfoDisplay.appendChild(countryCurrency)
 
 }

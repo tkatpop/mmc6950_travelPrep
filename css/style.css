@@ -372,6 +372,63 @@ Travel Information Page
 
 ****************/
 
+#right_currencyInfo{
+	background-color: #8FA698;
+	padding: 20px;
+	margin: 10px auto;
+}
+
+#right_currencyInfo h4{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.3rem;
+}
+
+#currencyInfo-title{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+#locationInfo-search{
+	border: 5px #BE6328 solid;
+	display:block;
+	margin: 10px auto;
+}
+
+#locationInfo-display{
+	margin: 20px auto;
+}
+
+#locationInfo-display h2{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+}
+
+#locationInfo-display h4{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	margin: 10px auto;
+}
+
+#locationInfo-display a{
+	font-family: adobe-handwriting-tiffany, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5rem;
+}
+
+#locationInfo-display img{
+	padding: 10px;
+}
+
 /***************
 
 Additional Information Page
@@ -554,6 +611,11 @@ Media Responsive Queries
 		margin: 0 auto;
 	}
 
+	#right_currencyInfo{
+		max-width: 300px;
+		margin: 10px auto;
+	}
+
 	footer,
 	.welcome_footer{
 		margin-top: 100px;
@@ -594,5 +656,21 @@ Media Responsive Queries
 		padding: 20px;
 	}
 
+	#locationInfo-display{
+		border: 5px #BE6328 solid;
+		background-color: #D9D1C6;
+		padding: 60px;
+	}
+
+	#locationInfo-display img{
+		position: absolute;
+		margin: -100px -600px;
+	}
+
+	#right_currencyInfo{
+		float: right;
+		margin: -260px 50px;
+		padding: 50px 20px;
+	}
 
 }

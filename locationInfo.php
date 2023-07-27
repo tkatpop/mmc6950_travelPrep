@@ -55,16 +55,11 @@
                 <h1>Location Information</h1>
             </div>
             
-            <!--Previous search sessions shows up here-->
-            <section id="left_previous_searches"></section> 
-
             <section id="locationInfo">
                 <!--API location info search form-->
                 <form>
-                    <label for="locationInfo-search">Enter Location Name</label>
-                    <input name="search" id="locationInfo-search" type="text" placeholder="enter the country name here"
-                    />
-                    <button type="submit">Search</button>
+                    <input name="search" id="locationInfo-search" type="text" placeholder="SEARCH FOR LOCATION"/>
+                    <button type="submit">SEARCH</button>
                 </form>
 
                 <!--API location info shows up here-->
@@ -72,7 +67,7 @@
             </section>  
 
             <section id="right_currencyInfo"><!--API currency info shows up here-->
-                <h4>Currency</h4>
+                <h4>CURRENCY</h4>
                 <div id="currencyInfo-display">
                     <h5 id="currencyInfo-title"></h5>
                 </div>
