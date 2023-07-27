@@ -12,7 +12,7 @@
 
     <header>
         
-        <div class="hamburger">
+        <div class="topnav">
             <a href="javascript:void(0)" class="hamburger"><i class="fa fa-bars"></i></a>
             <div class="hamburger-menu">
                 <a href="main.php">HOME</a>
@@ -151,7 +151,7 @@
 
         </div> <!--Closing tag for #container-->
 
-        <footer id="footer" class="welcome_footer">
+        <footer id="footer">
              <!--Footer nav bar after logged in-->
             <a  href="main.php">HOME</a>
                 <div class="large_footer_nav">
