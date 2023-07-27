@@ -201,6 +201,7 @@ Index, SignUp, Login, and Logout Pages
 	background-color: #D9D1C6;
 	padding: 10%;
 	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 .cover_container_welcome p{
@@ -262,7 +263,7 @@ form button{
 	color: #BEB18F;
     padding: 15px 60px;
     border-radius: 5px;
-	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-family: "neue-haas-grotesk-text", sans-serif;
 	font-weight: 500;
 	font-style: normal;
 	font-size: 1rem;
@@ -348,6 +349,7 @@ Packing List Page
 	font-family: "neue-haas-grotesk-display", sans-serif;
 	font-weight: 500;
 	font-style: normal;
+	font-size: 1.2rem;
 }
 
 #season{
@@ -395,10 +397,9 @@ Travel Information Page
 ****************/
 
 #right_currencyInfo{
-	background-color: #8FA698;
-	padding: 20px;
-	margin: 10px auto;
+	margin: 10px auto 20px;
 }
+
 
 #right_currencyInfo h4{
 	font-family: "neue-haas-grotesk-text", sans-serif;
@@ -570,6 +571,14 @@ Media Responsive Queries
 
 	}
 
+	#main-menu li:hover{
+		background-color: #3E2614;
+	}
+
+	#main-menu a:hover{
+		color: #D9D1C6;
+	}
+
 	.hamburger{
 		display: none;
 	}
@@ -663,6 +672,12 @@ Media Responsive Queries
 		display: inline-block;
 	}
 
+	.large_footer_nav a:hover,
+	#footer a:hover{
+		background-color: #3E2614;
+		color: #D9D1C6;
+	}
+
 	#footer a{
 		padding: 0 10px;
 	}
@@ -702,7 +717,7 @@ Media Responsive Queries
 
 	#right_currencyInfo{
 		float: right;
-		margin: -260px 50px;
+		margin: -300px 50px;
 		padding: 50px 20px;
 	}
 

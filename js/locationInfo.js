@@ -115,6 +115,8 @@ function showLocation(location){
 
   countryCurrency.textContent = ("PRIMARY CURRENCY: " + country_moneys)
   currencyInfoDisplay.appendChild(countryCurrency)
+  document.getElementById('currencyInfo-display').style.backgroundColor="#8FA698"
+  document.getElementById('currencyInfo-display').style.padding="50px"
 
 }
 
