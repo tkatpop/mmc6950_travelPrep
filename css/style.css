@@ -310,6 +310,28 @@ Main page
 
 ****************/
 
+.circle_globes{
+	margin-bottom: 30px;
+}
+
+.circle_globes h3{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.2rem;
+}
+
+.location_globe,
+.packing_globe{
+	display: none;
+}
+
+.location_circle img,
+.packing_circle img{
+	padding: 10px;
+}
+
+
 /***************
 
 Packing List Page
@@ -606,6 +628,17 @@ Media Responsive Queries
 		background-color: transparent;
 	}
 
+	.location_circle,
+	.packing_circle{
+		display: none;
+	}
+
+	.location_globe,
+	.packing_globe{
+		display: inline-block;
+		padding: 10px 20px;
+	}
+
 	.addInfoContainer{
 		max-width: 700px;
 		margin: 0 auto;
@@ -671,6 +704,10 @@ Media Responsive Queries
 		float: right;
 		margin: -260px 50px;
 		padding: 50px 20px;
+	}
+
+	h1{
+		font-size: 3rem;
 	}
 
 }

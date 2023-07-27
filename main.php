@@ -54,15 +54,37 @@
 
             <h1>Welcome Traveller!</h1>
 
-            <section> <!--Images associated with each page used here for links as background-->
-                <h3><a class="menuItem" href="locationInfo.php">Location Information</a></h3>
-                <h3><a class="menuItem" href="packingList.php">Packing List</a></h3>
+            <section class="circle_globes"> <!--Images associated with each page used here for links as background-->
+                <div class="location_circle">
+                    <a href="locationInfo.php">
+                        <img src="images/submark_circle_locations.png" alt="submark logo circle" width= 200px> 
+                    </a>
+                </div>
+
+                <div class="location_globe">
+                    <a href="locationInfo.php">
+                        <img src="images/submark_globe_locations.png" alt="submark logo circle" width= 200px> 
+                    </a>
+                </div>
+
+                <div class="packing_circle">
+                    <a href="packingList.php">
+                        <img src="images/submark_circle_packing.png" alt="submark logo circle" width= 200px>  
+                    </a>
+                </div>
+
+                <div class="packing_globe">
+                    <a href="packingList.php">
+                        <img src="images/submark_globe_packing.png" alt="submark logo circle" width= 200px>  
+                    </a>
+                </div>
+
             </section>
 
         </div> <!--Closing tag for #container-->
 
 
-        <footer id="footer" class="welcome_footer">
+        <footer id="footer" >
              <!--Footer nav bar after logged in-->
                 <a  href="main.php">HOME</a>
                 <div class="large_footer_nav">
