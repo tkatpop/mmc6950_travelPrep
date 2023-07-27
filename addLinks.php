@@ -52,18 +52,18 @@
             <section class="addLinkNav">
                 <!--Nav bar for page-->
                 <ul>
-                    <li><a href="#generalTravelInfo">General Travel Information</a></li>
-                    <li><a href="#healthInfo">Health</a></li>
-                    <li><a href="#transportInfo">Transportation</a></li>
-                    <li><a href="#hotelsInfo">Hotels/Housing</a></li>
+                    <li><a href="#generalTravelInfo">GENERAL TRAVEL INFORMATION</a></li>
+                    <li><a href="#healthInfo">HEALTH INFORMATION</a></li>
+                    <li><a href="#transportInfo">TRANSPORTATION INFORMATION</a></li>
+                    <li><a href="#hotelsInfo">HOTELS AND HOUSING INFORMATION</a></li>
                 </ul>
             </section>
 
-            <section>
+            <section class="addInfoContainer">
 
                 <div id="generalTravelInfo">
                     <!--General Travel information section with outside links-->
-                    <h3>General Travel Information</h3>
+                    <h3>GENERAL TRAVEL INFORMATION</h3>
                         <ul>
                             <li><a href="https://travel.state.gov/content/travel/en/international-travel.html" target="_blank">Travel.State.Gov: U.S. Department of State Bureau of Consular Affairs- International Travel</a></li>
                                 <p>This U.S. government website features a list of recommendations on traveling abroad including "Before You Go", "While Abroad", emergencies abroad, and information about destinations. </p>
@@ -78,7 +78,7 @@
                             <li><a href="https://www.state.gov/countries-and-areas-list/" target="_blank">U.S. Department of State- Countries and Areas</a></li>
                                 <p>This U.S. government website features a list of countries and region areas and provides a list of information about that area along with quick advisories.</p>
                         </ul>
-                    <h4>Passport Information</h4>
+                    <h4>PASSPORT INFORMATION</h4>
                         <ul>
                             <li><a href="https://www.usps.com/international/passports.htm" target="_blank">USPS: United States Postal Service- Passports</a></li>
                                 <p>United States Postal Service has information about applying for a U.S. passport book, card, or both as well as information about renewing passports. Appointments and documents can be created and downloaded from this website. </p>
@@ -91,7 +91,7 @@
 
                 <div id="healthInfo">
                     <!--Health information section with outside links-->
-                    <h3>Health Information</h3>
+                    <h3>HEALTH INFORMATION</h3>
                     <ul>
                         <li><a href="https://www.who.int/countries/" target="_blank">World Health Organization- Health Travel Information</a></li>
                             <p>World Health Organization, also known as WHO, features a list of countries along with facts about any selected country as well as health emergency, including COVID-19 statistics.  </p>
@@ -99,14 +99,13 @@
                             <p>CDC provides a list of countries and the recommended vaccinations and medication  needed to travel to these countries as well as information about health advice for traveling and what to expect after your trip. There is a portion of this website that focuses on COVID-19 recommendations and travel requirements in regards to COVID-19. </p>
                         <li><a href="https://travel.state.gov/content/travel/en/international-travel/before-you-go/your-health-abroad.html" target="_blank">Travel.State.Gov: U.S. Department of State Bureau of Consular Affairs- Health Abroad</a></li>
                             <p>This U.S. government website covers what to expect when traveling abroad and experience a medical emergency, finding a doctor or hospital abroad, insurance abroad, and lists of U.S. emabssies and consulates.</p>
-                        <li><a href="" target="_blank"></a></li>
                     </ul>
                 </div>
 
                 <div id="transportInfo">
                     <!--Transportation information section with outside links-->
-                    <h3>Transportation Information</h3>
-                    <h4>Airlines</h4>
+                    <h3>TRANSPORTATION INFORMATION</h3>
+                    <h4>AIRLINES</h4>
                     <p>Here are a list of airlines that provide international travel from United States of America. There are several smaller airlines that are used at destinations to travel more locally.</p>
                         <ul>
                             <li><a href="https://www.united.com/en/us" target="_blank">United Airlines</a></li>
@@ -116,7 +115,7 @@
                             <li><a href="https://www.alaskaair.com/" target="_blank">Alaska Airlines</a></li>
                             <li><a href="https://www.flyfrontier.com/" target="_blank">Frontier Airlines</a></li>
                         </ul>
-                    <h4>Cruises</h4>
+                    <h4>CRUISES</h4>
                     <p>Here are a list of cruiselines that provide international travel from United States of America. There are several smaller cruiselines that are used at destinations to travel more locally or provide a different cruise experience.</p>
                         <ul>
                             <li><a href="https://www.royalcaribbean.com/" target="_blank">Royal Caribbean Cruises</a></li>
@@ -129,16 +128,16 @@
 
                 <div id="hotelsInfo">
                     <!--Hotels/Housing information section with outside links-->
-                    <h3>Hotels and Housing Information</h3>
+                    <h3>HOTELS AND HOUSING INFORMATION</h3>
                     <p>Whether you want to stay in a hotel or someone else's home there are several websites to help find a place to make yourself comfortable. Some of the websites below feature both hotels and housing/homes. There are several hotel chains that have international locations, typically choose your favourite hotel chain and give them a look to see if they have hotels are your chosen destinations.</p>
-                    <h4>Hotels</h4>
+                    <h4>HOTELS</h4>
                         <ul>
                             <li><a href="https://www.booking.com/" target="_blank">Booking.com</a></li>
                             <li><a href="https://www.expedia.com/" target="_blank">Expedia</a></li>
                             <li><a href="https://www.travelocity.com/" target="_blank">Travelocity</a></li>
                             <li><a href="https://www.hotels.com/" target="_blank">Hotels.com</a></li>
                         </ul>
-                    <h4>Housing</h4>
+                    <h4>HOUSING</h4>
                         <ul>
                             <li><a href="https://www.homestay.com/" target="_blank">Homestay.com</a></li>
                             <li><a href="https://www.airbnb.com/" target="_blank">AirBnb</a></li>

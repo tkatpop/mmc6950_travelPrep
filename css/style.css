@@ -77,6 +77,14 @@ body a{
 	color: #3E2614;
 }
 
+h1{
+	font-family: adobe-handwriting-tiffany, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2.2rem;
+    padding: 30px;
+}
+
 
 /***************
 
@@ -317,6 +325,87 @@ Travel Information Page
 
 /***************
 
+Additional Information Page
+
+****************/
+
+.addLinkNav{
+	background-color: #D9D1C6;
+	border-bottom: 5px #BE6328 solid;
+	border-top: 5px #BE6328 solid;
+}
+
+.addLinkNav{
+	padding: 20px 0;
+}
+
+.addLinkNav li{
+	padding: 10px 0;
+}
+
+.addLinkNav a{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.addLinkNav a:hover{
+	text-decoration: underline;
+}
+
+.addInfoContainer{
+	max-width: 500px;
+	margin: 0 auto;
+
+}
+
+.addInfoContainer ul{
+	list-style: square;
+    margin: 0 30px;
+    text-align: left;
+}
+
+.addInfoContainer li{
+	margin: 10px 0;
+}
+
+.addInfoContainer h3{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: left;
+    font-size: 1.1rem;
+    padding: 20px 5px;
+}
+
+.addInfoContainer h4{
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	text-align: left;
+    padding: 20px 10px;
+}
+
+.addInfoContainer p{
+	text-align: left;
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	padding: 15px;
+}
+
+.addInfoContainer a{
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.addInfoContainer a:hover{
+	text-decoration: underline;
+}
+
+/***************
+
 Media Responsive Queries
 
 ****************/
@@ -411,6 +500,11 @@ Media Responsive Queries
 		background-color: transparent;
 	}
 
+	.addInfoContainer{
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
 	footer,
 	.welcome_footer{
 		margin-top: 100px;
@@ -425,7 +519,7 @@ Media Responsive Queries
 		display: inline-block;
 	}
 
-	.welcome_footer a{
+	#footer a{
 		padding: 0 10px;
 	}
 
