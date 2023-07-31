@@ -53,12 +53,13 @@
 
             <div>
                 <h1>Location Information</h1>
+                <p>Feeling the wanderlust? Search for a country that you are desiring to travel to in order to find out more information about that location.</p>
             </div>
             
             <section id="locationInfo">
                 <!--API location info search form-->
                 <form>
-                    <input name="search" id="locationInfo-search" type="text" placeholder="SEARCH FOR LOCATION"/>
+                    <input name="search" id="locationInfo-search" type="text" placeholder="SEARCH FOR COUNTRY"/>
                     <button type="submit">SEARCH</button>
                 </form>
 
