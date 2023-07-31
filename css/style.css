@@ -396,6 +396,13 @@ Travel Information Page
 
 ****************/
 
+.location_heading p{
+	font-family: "neue-haas-grotesk-display", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	padding: 15px;
+}
+
 #right_currencyInfo{
 	margin: 10px auto 20px;
 }

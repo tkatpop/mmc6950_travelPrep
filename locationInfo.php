@@ -51,7 +51,7 @@
         
             <!--This is where the content goes-->
 
-            <div>
+            <div class="location_heading">
                 <h1>Location Information</h1>
                 <p>Feeling the wanderlust? Search for a country that you are desiring to travel to in order to find out more information about that location.</p>
             </div>
